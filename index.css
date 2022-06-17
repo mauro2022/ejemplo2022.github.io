@@ -1,0 +1,395 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+body{
+	font-family: "source sans pro", sans-serif;
+	margin: 0;
+}
+
+.inicio {
+	color: white;
+	text-align: center;
+}
+
+.excel-basico{
+	text-align: center;
+	font-size: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: "fjalla one", sans-serif;
+	font-weight: normal;
+	
+}
+
+h1{
+	font-size: 30px;
+	line-height: 1.2em;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+	color:#026fff;
+	margin: 0;
+}
+
+h1 strong {
+	color:#156F25 ;
+	text-align: center;
+}
+
+h2 {
+	color: #026fff;
+	text-transform: uppercase;
+	font-family: "source sans pro", sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+
+
+.mauro{
+	height: 300px;
+	/*background-image: url(images/mauro2.jpg); */
+	background-color: #1b2127;
+	background-size: 400px 300px; 
+	background-repeat: no-repeat;
+	background-position-x: right; 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.mauro-image {
+	/*object-fit: cover;*/
+}
+
+
+
+
+
+.cabecera {
+	background-color: #1b2127;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	/*align-items: center;*/
+	height: 90px;
+	flex-wrap: wrap;
+	
+}
+
+.menu{
+	height: inherit;
+}
+
+.cabecera a {
+	color: white;
+	text-decoration: none;
+}
+.cabecera ol {
+	display: flex;
+	height: inherit;
+	
+} 
+
+.cabecera ol li {
+	height: inherit;
+	display: flex;
+	align-items: center;
+}
+
+.cabecera a{
+	display: flex;
+	align-items: center;
+	height: inherit;
+	padding: 0 10px;
+}
+
+
+ol,
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+figure{
+	margin: 0px;
+}
+
+.seccion {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.curso {
+	
+	margin: 1%;
+	width: 48%;
+	flex-shrink: 0;
+	/*border-radius: 5px;*/
+	overflow: hidden;
+	background:#1C8E0F;
+}
+
+.curso img {
+	
+	height: 250px;
+	object-fit: cover;
+	width: 100%;
+}
+
+
+.flexible {
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+	background: blue;
+	position: relative;
+}
+
+.youtube {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+.descripcion {
+	margin: 20px 40px; 
+	background-color: white;
+	margin-top: 10px;
+	position: relative;
+	padding: 20px;
+	text-align: center;
+
+}
+
+.capitulo {
+	/*text-align: left;*/
+}
+
+.pdf {
+	border: 2px solid green;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: green;
+	border-radius: 10px;
+}
+
+.event-list-title {
+	margin-left: 10px;
+}
+
+
+
+.contact {
+	display: flex;
+	background-color: #056fff;
+	color: white;
+	height: 150px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+
+
+.footer {
+	background-color: #1b2127;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.container {
+	max-width: width 1000px;
+	flex: 1;
+	margin: 0 auto;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	height:inherit; 
+	flex-wrap: inherit;
+	padding: 0 1em; 
+}
+	
+	
+
+
+.burger-button{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.80);
+	display: none;
+	line-height: 40px;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	left: 5px;
+	top: 5px;
+	color: white;
+	
+	
+}
+
+
+@media screen and (max-width:1023px) {
+	
+	.container {
+		padding: 0 1em;
+	}
+	
+	.mauro {
+		height: auto;
+		position: relative;
+		overflow: hidden;
+		padding: 2em;
+		
+	}
+	
+	.mauro-image {
+		
+		z-index: 1;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 50%;
+		
+		
+	}
+	
+	h1 {
+		font-size: 2em;
+		z-index: 2;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	
+	.burger-button{
+		display: block;
+	}
+	
+	.cabecera{
+		
+		display: block;
+		height: auto;
+	}
+	
+	.cabecera ol {
+		display: block;
+	}
+	
+	.cabecera ol li {
+		height: 40px;
+		display: block;
+	}
+	
+	.cabecera a {
+	 	 justify-content: center;
+	 	 height: 40px;
+	 	 font-size: 2em;
+		text-decoration: underline;
+		margin-bottom:  .5em;
+	}
+	
+	.cabecera .logo {
+		text-align: center;
+		
+	}
+	
+	.menu {
+		position: fixed;
+		background: rgba(5, 111, 255, .9);
+		z-index: 3;
+		top:0;
+		left: -100vw; /*Para que el menu se oculte a la izquierda y se muestre al hacer click */
+		width: 100vw;
+		bottom: 0; 
+		/*height: 100vh; *//* a partir de aquí para centrar */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: .3s; /*crea efecto de transicion */
+	}
+	
+	.menu.is-active {
+		left: 0;
+	}
+	
+	
+	.curso {
+		width: 95%;
+		flex-shrink: initial;
+		text-align: center;
+	}
+	
+	.curso img {
+		width: 95%;
+	}
+	
+	.descripcion {
+		margin: 10px 10px 10px 10px; 
+	}
+	
+}
+@media screen and (max-width:480px) {
+	
+	h1 {
+		font-size: 1.5 em;
+	}
+	.descripcion {
+		/* 1em= 16px */
+		margin: 2em .5em .5em;
+		padding: 1em;
+	}
+	
+	.contact {
+		height: auto;
+		padding: 1em 0;
+		display: block;
+		text-align: center;
+	}
+	
+.pdf {
+		display: block;
+		margin: 10px;
+		
+	}
+	.footer {
+		display: block;
+		text-align: center;
+		border: 1px solid transparent;
+	}
+	
+}
+@media screen and (max-width:320px) {
+	
+	h1 {
+		font-size: 1.2em;
+		padding: 3em 1em;
+		/*background: rgba(0,0,0,0.5);*/
+	}
+	
+	.pdf {
+		display: block;
+		margin: 10px;
+		
+	}
+	}
